@@ -5,7 +5,7 @@ html
     meta(http-equiv="X-UA-Compatible" content="IE=Edge")
     title.
       Avada Theme
-    meta(name = "description" content="")
+    meta(name = "description" content="Avada wordpress theme live demo.")
     meta(name = "viewport" content="width=device-width, initial-scale=1")
     link(rel = "stylesheet" href="css/reset.css")
     link(rel = "stylesheet" href="css/main.css")
@@ -13,38 +13,38 @@ html
     header
       nav
         img(src="/logo.png" alt="Avada logo" class="logo")
-        ul
-          li: a(href="#") Home
-          li: a(href="#") Sliders
-          li: a(href="#") Headers
-          li: a(href="#") Pages
-          li: a(href="#") Portfolio
-          li: a(href="#") Blog
-          li: a(href="#") Shop
-          li: a(href="#") Features
-          li: a(href="#") Shortcodes
-          li.icon: a(href="#") carticoncode
-          li.icon: a(href="#") loupeiconcode
+        a(href="#") Home
+        a(href="#") Sliders
+        a(href="#") Headers
+        a(href="#") Pages
+        a(href="#") Portfolio
+        a(href="#") Blog
+        a(href="#") Shop
+        a(href="#") Features
+        a(href="#") Shortcodes
+        a.icon(href="#") Cart
+        a.icon(href="#") Search
 
     section(role="page title")
       h1 About Us Page 1
       nav (role="breadcrumb")
-        ul.breadcrumb
-          li: a(href="#") Home
-          li: a(href="#") About Us Page 1
+        a(href="#") Home
+        a(href="#") About Us Page 1
 
     section.slider
       nav.slide-nav
-        ul
-          li: a(href="#")
-          li: a(href="#")
-          li: a(href="#")
-          li: a(href="#")
-      ul.slides
-        li: video(src="video.mp4")
-        li: img(src="slider2.png" alt="Slide Two")
-        li: img(src="slider3.png" alt="Slide Three")
-        li: img(src="slider4.png" alt="Slide Four")
+        figure
+          video(src="video.mp4")
+          figurecap Video introduction to our company
+        figure
+          img(src="slider2.png" alt="Slide Two")
+          figurecap Content about the second slide!
+        figure
+          img(src="slider3.png" alt="Slide Three")
+          figurecap More content! About the third slide!
+        figure
+          img(src="slider4.png" alt="Slide Four")
+          figurecap More content again! Fourth slide shit!
     article(role="welcome")
       h2 Welcome To Avada
       p.
@@ -70,48 +70,55 @@ html
         Fugiat dapibus, tellus ac cursus commodo, mauris sit condim eser ntumsi nibh, uum a justo vitaes amet risus amets un. Posi sectetut amet fermntum orem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia nons.
     section(role="skills")
       h2 Our Crazy Skills
-      progress(max="100" value="90" label="Web Design")
-      progress(max="100" value="95" label="HTML/CSS")
-      progress(max="100" value="85" label="Graphic Design")
-      progress(max="100" value="75" label="Word Press")
+      progress(max="100" value="90") Web Design
+      progress(max="100" value="95") HTML/CSS
+      progress(max="100" value="85") Graphic Design
+      progress(max="100" value="75") Word Press
     section(role="team")
       h2 Meet Our Team
-      section (role="team-member1")
-        img(src="john.jpg" alt="John Doe's picture")
-        h3 John Doe
-        p(role="title")
-         | Developer
-        ul(role="social-links" class="icons")
-          li: a(href="#") iconcode
-          li: a(href="#") iconcode
-          li: a(href="#") iconcode
-          li: a(href="#") iconcode
-        p.
-          Redantium, totam rem aperiam, eaque ipsa qu ab illo inventore veritatis et quasi architectos beatae vitae dicta sunt explicabo. Nemo enims sadips ipsums un.
-      section(role="team-member2")
-        img(src="john.jpg" alt="John Doe's picture")
-        h3 John Doe
-        p(role="title")
-         | Developer
-        ul(role="social-links" class="icons")
-          li: a(href="#") iconcode
-          li: a(href="#") iconcode
-          li: a(href="#") iconcode
-          li: a(href="#") iconcode
-        p.
-          Redantium, totam rem aperiam, eaque ipsa qu ab illo inventore veritatis et quasi architectos beatae vitae dicta sunt explicabo. Nemo enims sadips ipsums un.
-      section(role="team-member3")
-        img(src="john.jpg" alt="John Doe's picture")
-        h3 John Doe
-        p(role="title")
-         | Developer
-        ul(role="social-links" class="icons")
-          li: a(href="#") iconcode
-          li: a(href="#") iconcode
-          li: a(href="#") iconcode
-          li: a(href="#") iconcode
-        p.
-          Redantium, totam rem aperiam, eaque ipsa qu ab illo inventore veritatis et quasi architectos beatae vitae dicta sunt explicabo. Nemo enims sadips ipsums un.
+      section (role="team-member 1")
+        figure
+          figurecap
+            img(src="john.jpg" alt="John Doe's picture")
+            h3 John Doe
+            p(role="title")
+             | Developer
+            nav(role="social-links" class="icons")
+              a(href="#") Dribbble
+              a(href="#") Facebook
+              a(href="#") Twitter
+              a(href="#") LinkedIn
+            p.
+              Redantium, totam rem aperiam, eaque ipsa qu ab illo inventore veritatis et quasi architectos beatae vitae dicta sunt explicabo. Nemo enims sadips ipsums un.
+      section (role="team-member 2")
+        figure
+          figurecap
+            img(src="john.jpg" alt="John Doe's picture")
+            h3 John Doe
+            p(role="title")
+             | Developer
+            nav(role="social-links" class="icons")
+              a(href="#") Dribbble
+              a(href="#") Facebook
+              a(href="#") Twitter
+              a(href="#") LinkedIn
+            p.
+              Redantium, totam rem aperiam, eaque ipsa qu ab illo inventore veritatis et quasi architectos beatae vitae dicta sunt explicabo. Nemo enims sadips ipsums un.
+      section (role="team-member 3")
+        figure
+          figurecap
+            img(src="john.jpg" alt="John Doe's picture")
+            h3 John Doe
+            p(role="title")
+             | Developer
+            nav(role="social-links" class="icons")
+              a(href="#") Dribbble
+              a(href="#") Facebook
+              a(href="#") Twitter
+              a(href="#") LinkedIn
+            p.
+              Redantium, totam rem aperiam, eaque ipsa qu ab illo inventore veritatis et quasi architectos beatae vitae dicta sunt explicabo. Nemo enims sadips ipsums un.
+
       section (role="client-form")
         form.contact_form(action="" method="post" name="contact_form")
           fieldset
@@ -125,6 +132,7 @@ html
                 input(type="email" id="email" placeholder="name@example.com")
               li
                 button.submit (type="submit") Submit!
+
       footer
         aside(role="mission-statement")
         img(src="avada-logo.png", alt="Avada logo")
