@@ -1,0 +1,167 @@
+doctype html
+html
+  head
+    meta(charset="utf-8")
+    meta(http-equiv="X-UA-Compatible" content="IE=Edge")
+    title.
+      Avada Theme
+    meta(name = "description" content="")
+    meta(name = "viewport" content="width=device-width, initial-scale=1")
+    link(rel = "stylesheet" href="css/reset.css")
+    link(rel = "stylesheet" href="css/main.css")
+  body
+    header
+      nav
+        img(src="/logo.png" alt="Avada logo" class="logo")
+        ul
+          li: a(href="#") Home
+          li: a(href="#") Sliders
+          li: a(href="#") Headers
+          li: a(href="#") Pages
+          li: a(href="#") Portfolio
+          li: a(href="#") Blog
+          li: a(href="#") Shop
+          li: a(href="#") Features
+          li: a(href="#") Shortcodes
+          li.icon: a(href="#") carticoncode
+          li.icon: a(href="#") loupeiconcode
+
+    section(role="page title")
+      h1 About Us Page 1
+      nav (role="breadcrumb")
+        ul.breadcrumb
+          li: a(href="#") Home
+          li: a(href="#") About Us Page 1
+
+    section.slider
+      nav.slide-nav
+        ul
+          li: a(href="#")
+          li: a(href="#")
+          li: a(href="#")
+          li: a(href="#")
+      ul.slides
+        li: video(src="video.mp4")
+        li: img(src="slider2.png" alt="Slide Two")
+        li: img(src="slider3.png" alt="Slide Three")
+        li: img(src="slider4.png" alt="Slide Four")
+    article(role="welcome")
+      h2 Welcome To Avada
+      p.
+        Lid est laborum dolo rumes fugats untras. Etharums ser quidem rerum facilis dolores nemis omnis fugats vitaes nemo minima rerums unsers sadips amets.. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt.. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore dolore magnm aliquam quaerat voluptatem.
+    section(role="introduction")
+      h2 Who Is Avada
+      button.accordian arrowicon
+      h3 Our Company Mission
+      p.
+        Fugiat dapibus, tellus ac cursus commodo, mauris sit condim eser ntumsi nibh, uum a justo vitaes amet risus amets un. Posi sectetut amet fermntum orem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia nons.
+      h2 Who Is Avada
+      button.accordian arrowicon
+      h3 The Avada Philosophy
+      p.
+        Fugiat dapibus, tellus ac cursus commodo, mauris sit condim eser ntumsi nibh, uum a justo vitaes amet risus amets un. Posi sectetut amet fermntum orem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia nons.
+      button.accordian arrowicon
+      h3 The Avada Promise
+      p.
+        Fugiat dapibus, tellus ac cursus commodo, mauris sit condim eser ntumsi nibh, uum a justo vitaes amet risus amets un. Posi sectetut amet fermntum orem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia nons.
+      button.accordian arrowicon
+      h3 We Can Deliver On Projects
+      p.
+        Fugiat dapibus, tellus ac cursus commodo, mauris sit condim eser ntumsi nibh, uum a justo vitaes amet risus amets un. Posi sectetut amet fermntum orem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia nons.
+    section(role="skills")
+      h2 Our Crazy Skills
+      progress(max="100" value="90" label="Web Design")
+      progress(max="100" value="95" label="HTML/CSS")
+      progress(max="100" value="85" label="Graphic Design")
+      progress(max="100" value="75" label="Word Press")
+    section(role="team")
+      h2 Meet Our Team
+      section (role="team-member1")
+        img(src="john.jpg" alt="John Doe's picture")
+        h3 John Doe
+        p(role="title")
+         | Developer
+        ul(role="social-links" class="icons")
+          li: a(href="#") iconcode
+          li: a(href="#") iconcode
+          li: a(href="#") iconcode
+          li: a(href="#") iconcode
+        p.
+          Redantium, totam rem aperiam, eaque ipsa qu ab illo inventore veritatis et quasi architectos beatae vitae dicta sunt explicabo. Nemo enims sadips ipsums un.
+      section(role="team-member2")
+        img(src="john.jpg" alt="John Doe's picture")
+        h3 John Doe
+        p(role="title")
+         | Developer
+        ul(role="social-links" class="icons")
+          li: a(href="#") iconcode
+          li: a(href="#") iconcode
+          li: a(href="#") iconcode
+          li: a(href="#") iconcode
+        p.
+          Redantium, totam rem aperiam, eaque ipsa qu ab illo inventore veritatis et quasi architectos beatae vitae dicta sunt explicabo. Nemo enims sadips ipsums un.
+      section(role="team-member3")
+        img(src="john.jpg" alt="John Doe's picture")
+        h3 John Doe
+        p(role="title")
+         | Developer
+        ul(role="social-links" class="icons")
+          li: a(href="#") iconcode
+          li: a(href="#") iconcode
+          li: a(href="#") iconcode
+          li: a(href="#") iconcode
+        p.
+          Redantium, totam rem aperiam, eaque ipsa qu ab illo inventore veritatis et quasi architectos beatae vitae dicta sunt explicabo. Nemo enims sadips ipsums un.
+      section (role="client-form")
+        form.contact_form(action="" method="post" name="contact_form")
+          fieldset
+            h2 Want to be a Client?
+            ul
+              li
+                label(for="name") Name:
+                input(type="text" id="name" placeholder="Antonio Tony" required)
+              li
+                label(for="email") Email:
+                input(type="email" id="email" placeholder="name@example.com")
+              li
+                button.submit (type="submit") Submit!
+      footer
+        aside(role="mission-statement")
+        img(src="avada-logo.png", alt="Avada logo")
+        p.
+          Lorem ipsum ex vix illud nonummy, novum tation et his. At vix scriptaset patrioque scribentur, at pro fugit erts verterem molestiae, sed et vivendo ali Lorem ipsum ex vix illud nonummy, novum tation et his. At vix scripta patrioque scribentur...
+
+        section(role="recent-blog-posts")
+          h4 Recent Posts
+          ul
+            li: a(href="#") Blog Slideshow Post
+            li: a(href="#") Aenean Odio Mauris
+            li: a(href="#") Blog Image Post
+            li: a(href="#") Blog Video Post
+            li: a(href="#") Donec Suscipit Dim Euismods
+        section
+          h4 Recent Tweets
+          ul.twitter
+            li: a(href="#" class="twitter_user") @tringwebdesign
+              p.
+                very nice, fantastic job!
+              a(href="#", class="twitter_timestamp") 22 Hours Ago
+            li: a(href="#" class="twitter_user") @hanofthehouse
+              p.
+                It should work now, there were a few issues with the envato API.
+              a(href="#", class="twitter_timestamp") 5 days ago
+        section
+          h4 Recent Works
+          ul.work-grid
+            li: a(href="#")
+              img(src="work1.png", alt="Work Example 1")
+            li: a(href="#")
+              img(src="work1.png", alt="Work Example 2")
+            li: a(href="#")
+              img(src="work1.png", alt="Work Example 3")
+            li: a(href="#")
+              img(src="work1.png", alt="Work Example 4")
+            li: a(href="#")
+              img(src="work1.png", alt="Work Example 5")
+            li: a(href="#")
+              img(src="work1.png", alt="Work Example 6")
