@@ -1,0 +1,170 @@
+doctype
+html
+  head
+    meta(charset='utf-8')
+    meta(http-equiv='X-UA-Compatible', content='IE=edge')
+    title(name='description', content="Let's go jade!")
+    meta(name='viewport', content='width=device-width, initial-scale=1')
+  body
+    //if lt IE 8
+      p.browsehappy You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.
+    nav
+      h1
+        a(href='#')
+          img(src='avada-logo.png', alt='Avada')
+      a(href='#') Home
+      a(href='#') Sliders
+      a(href='#') Headers
+      a(href='#') Pages
+      a(href='#') Portfolio
+      a(href='#') Blog
+      a(href='#') Shop
+      a(href='#') Features
+      a(href='#') Shortcodes
+      a(href='#')
+        i.fa-shopping-cart
+      a(href='#')
+        i.fa-search
+
+    section
+      h1 About Us Page 1
+      ul.breadcrumbs
+        li
+          a Home
+        li /
+        li About Us Page 1
+    section
+      .slideshow
+        figure
+          img(src='photo1.jpg', alt='People sitting at table')
+        figure
+          img(src='photo2.jpg', alt='Man staring at camera weirdly')
+        div
+          iframe(width='560', height='315', src='http://www.youtube.com/embed/hsEUBLIJvmE?rel=0', frameborder='0', allowfullscreen)
+        figure
+          img(src='photo3.jpg', alt='Pens drawing diagrams')
+      article
+        h2 Welcome to Avada
+        p Lid est laborum dolo rumes fugats untras. Etharums ser quidem rerum facilis dolores nemis omnis fugats vitaes nemo minima rerums unsers sadips amets.. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt.. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore dolore magnm aliquam quaerat voluptatem.
+    section
+      h2 Who  is Avada
+      ul
+        li
+          h3 Our Company Mission
+            p Fugiat dapibus, tellus ac cursus commodo, mauris sit condim eser ntumsi nibh, uum a justo vitaes amet risus amets un. Posi sectetut amet fermntum orem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia nons.
+        li
+          h3 The Avada Philosophy
+            p Fugiat dapibus, tellus ac cursus commodo, mauris sit condim eser ntumsi nibh, uum a justo vitaes amet risus amets un. Posi sectetut amet fermntum orem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia nons.
+        li
+          h3 The Avada Promise
+            p Fugiat dapibus, tellus ac cursus commodo, mauris sit condim eser ntumsi nibh, uum a justo vitaes amet risus amets un. Posi sectetut amet fermntum orem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia nons.
+        li
+          h3 We Can Deliver on Projects
+            p Fugiat dapibus, tellus ac cursus commodo, mauris sit condim eser ntumsi nibh, uum a justo vitaes amet risus amets un. Posi sectetut amet fermntum orem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia nons.
+    section
+      h2 Meet our Team
+      figure
+        img(src='blackguy.jpg', alt='Black Guy')
+        figcaption
+          h2 John Doe
+          h3 Developer
+          a(href='dribbble.com')
+          a(href='linkedin.com')
+          a(href='twitter.com')
+          a(href='facebook.com')
+          p Redantium, totam rem aperiam, eaque ipsa qu ab illo inventore veritatis et quasi architectos beatae vitae dicta sunt explicabo. Nemo enims sadips ipsums un.
+      figure
+        img(src='blackgirl.jpg', alt='Black Girl')
+        figcaption
+          h2 John Doe
+          h3 Developer
+          a(href='dribbble.com')
+          a(href='linkedin.com')
+          a(href='twitter.com')
+          a(href='facebook.com')
+          p Redantium, totam rem aperiam, eaque ipsa qu ab illo inventore veritatis et quasi architectos beatae vitae dicta sunt explicabo. Nemo enims sadips ipsums un.
+      figure
+        img(src='whiteguy.jpg', alt='White Guy')
+        figcaption
+          h2 John Doe
+          h3 Developer
+          a(href='dribbble.com')
+          a(href='linkedin.com')
+          a(href='twitter.com')
+          a(href='facebook.com')
+          p Redantium, totam rem aperiam, eaque ipsa qu ab illo inventore veritatis et quasi architectos beatae vitae dicta sunt explicabo. Nemo enims sadips ipsums un.
+    section
+      h2 Our Happy Clients
+        img(src='shift.jpg', alt='shift logo')
+        img(src='envato.jpg', alt='envato logo')
+        img(src='threeleaves.jpg', alt='three leaves logo')
+        img(src='sparrow.jpg', alt='sparrow logo')
+        img(src='ac.jpg', alt='ac logo')
+    form
+      fieldset
+        legend Contact Us
+        label Full Name
+        input(type='text', placeholder='Darius Bumblesworth', required, autofocus)
+        label Email
+        input(type='email', placeholder='darius@bumblesworth.com', required)
+        label Message
+        input(type='text', placeholder='Your message here', required)
+        button(type='submit') Submit
+    footer
+      aside(role='contentinfo')
+        img(src='avada-logo.png', alt='avada logo')
+        p Lorem ipsum ex vix illud nonummy, novum tation et his. At vix scriptaset patrioque scribentur, at pro fugit erts verterem molestiae, sed et vivendo ali Lorem ipsum ex vix illud nonummy, novum tation et his. At vix scripta patrioque scribentur...
+      div(role='list')
+        h3 Recent Posts
+        ul
+          li
+            a(href='#') Blog Slideshow Post
+            a(href='#') Aenean Odio Mauris
+            a(href='#') Blog Image Post
+            a(href='#') Blog Video Post
+            a(href='#') Donec Suscipit Euismods
+      div(role='complementary')
+        ul
+          li @tringwebdesign very nice, fantastic job!
+            a(href='#') 22 hours ago
+          li @hanofthehouse hey! It should work now
+            a(href='#') 5 days ago
+      div(role='complementary')
+        img(src='work1.jpg', alt='work 1')
+        img(src='work2.jpg', alt='work 2')
+        img(src='work3.jpg', alt='work 3')
+        img(src='work4.jpg', alt='work 4')
+        img(src='work5.jpg', alt='work 5')
+        img(src='work6.jpg', alt='work 6')
+      div(role='contentinfo')
+        p Copyright 2012 - 2014 Avada Theme by Theme Fusion | All Rights Reserved | Powered by WordPress
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
