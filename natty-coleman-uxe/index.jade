@@ -11,7 +11,7 @@ html
     link(rel = "stylesheet" href="css/main.css")
   body
     header
-      nav
+      nav(role="navigation")
         img(src="/logo.png" alt="Avada logo" class="logo")
         a(href="#") Home
         a(href="#") Sliders
@@ -25,13 +25,13 @@ html
         a.icon(href="#") Cart
         a.icon(href="#") Search
 
-    section(role="page title")
+    section(class="page-head")
       h1 About Us Page 1
-      nav (role="breadcrumb")
+      nav(role="navigation" id="breadcrumb" aria-labelledby="breadcrumb")
         a(href="#") Home
         a(href="#") About Us Page 1
 
-    section.slider
+    section.slider(role="marquee")
       nav.slide-nav
         figure
           video(src="video.mp4")
@@ -45,73 +45,70 @@ html
         figure
           img(src="slider4.png" alt="Slide Four")
           figcaption More content again! Fourth slide shit!
-    article(role="welcome")
+    article(role="main")
       h1 Welcome To Avada
       p.
         Lid est laborum dolo rumes fugats untras. Etharums ser quidem rerum facilis dolores nemis omnis fugats vitaes nemo minima rerums unsers sadips amets.. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt.. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore dolore magnm aliquam quaerat voluptatem.
-    section(role="article")
+    section(role="main")
       h1 Who Is Avada
       button.accordian arrowicon
-      h3 Our Company Mission
+      h2 Our Company Mission
       p.
         Fugiat dapibus, tellus ac cursus commodo, mauris sit condim eser ntumsi nibh, uum a justo vitaes amet risus amets un. Posi sectetut amet fermntum orem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia nons.
-      h1 Who Is Avada
+      h2 Who Is Avada
       button.accordian arrowicon
-      h3 The Avada Philosophy
-      p.
-        Fugiat dapibus, tellus ac cursus commodo, mauris sit condim eser ntumsi nibh, uum a justo vitaes amet risus amets un. Posi sectetut amet fermntum orem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia nons.
-      button.accordian arrowicon
-      h3 The Avada Promise
+      h2 The Avada Philosophy
       p.
         Fugiat dapibus, tellus ac cursus commodo, mauris sit condim eser ntumsi nibh, uum a justo vitaes amet risus amets un. Posi sectetut amet fermntum orem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia nons.
       button.accordian arrowicon
-      h3 We Can Deliver On Projects
+      h2 The Avada Promise
       p.
         Fugiat dapibus, tellus ac cursus commodo, mauris sit condim eser ntumsi nibh, uum a justo vitaes amet risus amets un. Posi sectetut amet fermntum orem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia nons.
-    section(role="skills")
+      button.accordian arrowicon
+      h2 We Can Deliver On Projects
+      p.
+        Fugiat dapibus, tellus ac cursus commodo, mauris sit condim eser ntumsi nibh, uum a justo vitaes amet risus amets un. Posi sectetut amet fermntum orem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia nons.
+    section(role="main")
       h1 Our Crazy Skills
-      progress(max="100" value="90") Web Design
-      progress(max="100" value="95") HTML/CSS
-      progress(max="100" value="85") Graphic Design
-      progress(max="100" value="75") Word Press
-    section(role="team")
+      progress(aria-valuenow="90" aria-valuemin="0" aria-valuemax="100") Web Design
+      progress(aria-valuenow="95" aria-valuemin="0" aria-valuemax="100") HTML/CSS
+      progress(aria-valuenow="85" aria-valuemin="0" aria-valuemax="100") Graphic Design
+      progress(aria-valuenow="75" aria-valuemin="0" aria-valuemax="100") Word Press
+    section(role="main")
       h1 Meet Our Team
-      section (role="team-member 1")
+      section
         figure
           figurecap
             img(src="john.jpg" alt="John Doe's picture")
-            h3 John Doe
-            p(role="title")
-             | Developer
-            nav(role="social-links" class="icons")
+            h1 John Doe
+            h2 Developer
+            nav
               a(href="#") Dribbble
               a(href="#") Facebook
               a(href="#") Twitter
               a(href="#") LinkedIn
             p.
               Redantium, totam rem aperiam, eaque ipsa qu ab illo inventore veritatis et quasi architectos beatae vitae dicta sunt explicabo. Nemo enims sadips ipsums un.
-      section (role="team-member 2")
+      section
         figure
           figurecap
             img(src="john.jpg" alt="John Doe's picture")
-            h3 John Doe
-            p(role="title")
-             | Developer
-            nav(role="social-links" class="icons")
+            h1 John Doe
+            h2 Developer
+            nav
               a(href="#") Dribbble
               a(href="#") Facebook
               a(href="#") Twitter
               a(href="#") LinkedIn
             p.
               Redantium, totam rem aperiam, eaque ipsa qu ab illo inventore veritatis et quasi architectos beatae vitae dicta sunt explicabo. Nemo enims sadips ipsums un.
-      section (role="team-member 3")
+      section
         figure
           figurecap
             img(src="john.jpg" alt="John Doe's picture")
-            h3 John Doe
-            p(role="title")
-             | Developer
-            nav(role="social-links" class="icons")
+            h1 John Doe
+            h2 Developer
+            nav
               a(href="#") Dribbble
               a(href="#") Facebook
               a(href="#") Twitter
@@ -119,28 +116,23 @@ html
             p.
               Redantium, totam rem aperiam, eaque ipsa qu ab illo inventore veritatis et quasi architectos beatae vitae dicta sunt explicabo. Nemo enims sadips ipsums un.
 
-      section (role="client-form")
-        form.contact_form(action="" method="post" name="contact_form")
+      section
+        form.contact_form(method="post" name="contact_form" role="form")
           fieldset
             h1 Want to be a Client?
-            ul
-              li
-                label(for="name") Name:
-                input(type="text" id="name" placeholder="Antonio Tony" required)
-              li
-                label(for="email") Email:
-                input(type="email" id="email" placeholder="name@example.com")
-              li
-                button.submit (type="submit") Submit!
+              label(for="name") Name:
+              input(type="text" id="name" placeholder="Antonio Tony" required)
+              label(for="email") Email:
+              input(type="email" id="email" placeholder="name@example.com")
+              button.submit(type="submit" role="button") Submit!
 
       footer
-        aside(role="mission-statement")
-        img(src="avada-logo.png", alt="Avada logo")
-        p.
-          Lorem ipsum ex vix illud nonummy, novum tation et his. At vix scriptaset patrioque scribentur, at pro fugit erts verterem molestiae, sed et vivendo ali Lorem ipsum ex vix illud nonummy, novum tation et his. At vix scripta patrioque scribentur...
-
-        section(role="recent-blog-posts")
-          h4 Recent Posts
+        aside(role="complementary")
+          img(src="avada-logo.png", alt="Avada logo")
+          p.
+            Lorem ipsum ex vix illud nonummy, novum tation et his. At vix scriptaset patrioque scribentur, at pro fugit erts verterem molestiae, sed et vivendo ali Lorem ipsum ex vix illud nonummy, novum tation et his. At vix scripta patrioque scribentur...
+        section
+          h1 Recent Posts
           ul
             li: a(href="#") Blog Slideshow Post
             li: a(href="#") Aenean Odio Mauris
@@ -148,7 +140,7 @@ html
             li: a(href="#") Blog Video Post
             li: a(href="#") Donec Suscipit Dim Euismods
         section
-          h4 Recent Tweets
+          h1 Recent Tweets
           ul.twitter
             li: a(href="#" class="twitter_user") @tringwebdesign
               p.
@@ -159,7 +151,7 @@ html
                 It should work now, there were a few issues with the envato API.
               a(href="#", class="twitter_timestamp") 5 days ago
         section
-          h4 Recent Works
+          h1 Recent Works
           ul.work-grid
             li: a(href="#")
               img(src="work1.png", alt="Work Example 1")
