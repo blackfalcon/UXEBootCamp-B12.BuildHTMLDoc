@@ -1,77 +1,65 @@
 <!DOCTYPE html>
-<html class="no-js"> <!-- antiquated piece of code that should not be here; for ie browsers -->
+    <html class="no-js">
     <head>
-        <meta charset="utf-8"><!-- a kind of decryption key for the text // provides mapping between the stuff you see on your screen and the stuff your computer actually stores in memory and on disk-->
-        <meta http-equiv="X-UA-Compatible" content="IE=edge"><!-- allows IE browsers to install / experience chrome within browse -->
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <title>Avada - About Us Page 1 </title>
-        <meta name="description" content="hi, google, give, me, monies">
-        <meta name="viewport" content="width=device-width, initial-scale=1"><!--common/not official standard; line 8 exists by/for apple, via webkit it got into chome, now adopted as a standard; only people who support viewport in css3 spec is microsoft, whut whut -->
-
-        <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
-
-        <!-- <link rel="stylesheet" href="css/normalize.css"> made by nichaolas gallagher-->
+        <meta name="description" content="avada, wordpres, theme">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="css/reset.css">
         <link rel="stylesheet" href="css/main.css">
-        <script src="js/vendor/modernizr-2.6.2.min.js"></script><!-- has to be in the top; rewriting DOM in javascript before DOM loads; -->
     </head>
     <!-- body -->
     <body>
-        <!--[if lt IE 7]>
-            <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://brßowsehappy.com/">upgrade your browser</a> to improve your experience.</p>
-            //if you need to support shim put the code in here b/c its big and slow!
-        <![endif]-->
-
         <!-- nav bar menu-->
         <header>
-            <nav>
-                <h1><a href="#"><img src="http://theme-fusion.com/avada/wp-content/uploads/2013/02/logo2x.png" alt="Avada-logo"></a></h1>
-                <ul>
-                    <li ><a href="#">Home</a></li>
-                    <li ><a href="#">Sliders</a></li>
-                    <li ><a href="#">Headers</a></li>
-                    <li ><a href="#">Pages</a></li>
-                    <li ><a href="#">Portfolio</a></li>
-                    <li ><a href="#">Blog</a></li>
-                    <li ><a href="#">Shop</a></li>
-                    <li ><a href="#">Features</a></li>
-                    <li ><a href="#">Shortcodes</a></li>
-                    <li ><a href="http://theme-fusion.com/avada/cart/" alt="cart-icon"></a></li>
-                    <li ><a href="http://theme-fusion.com/avada/search/" alt="search-icon"></a></li>
-                </ul>
+            <nav role="navigation">
+                <a href="#"><img src="http://theme-fusion.com/avada/wp-content/uploads/2013/02/logo2x.png" alt="logo" ></a>   
+                <a href="#">Home</a>
+                <a href="#">Sliders</a>
+                <a href="#">Headers</a>
+                <a href="#">Pages</a>
+                <a href="#">Portfolio</a>
+                <a href="#">Blog</a>
+                <a href="#">Shop</a>
+                <a href="#">Features</a>
+                <a href="#">Shortcodes</a>
+                <a href="http://theme-fusion.com/avada/cart/" class="icon">Cart</a>
+                <a href="http://theme-fusion.com/avada/search/" class="icon">Search</a>
             </nav>
         </header>
         <!--sections & articles -->
-        <section role="about">
-            <h1>About Us Page 1</h1>
-                <ul role="random flow crap">
-                    <li><a href="#">Home</a></li>
-                    <li>About Us Page 1</li>
-                </ul>
+        <section >
+                <nav role="navigation"> 
+                    <h1>About Us Page 1</h1>
+                    <a href="#">Home</a>
+                    <p>About Us Page 1<p>
+                </nav>
         </section>
         <!--media slider-->
-        <section role="media">
-             <div class="media-slider">
+        <section role="main">
+             <nav class="slider">
                 <div class="video">
-                    <a href="#"><video src="https://www.youtube.com/watch?v=hsEUBLIJvmE"></video></a>
-                </div>
+                   <video src="https://www.youtube.com/watch?v=hsEUBLIJvmE"></video>
+                </div><!-- video -->
                 <figure>
-                    <a href="#"><img src="http://theme-fusion.com/avada/wp-content/uploads/2013/01/about_1.jpg" alt="Slide One"></a>
-                </figure>
+                    <img src="http://theme-fusion.com/avada/wp-content/uploads/2013/01/about_1.jpg" alt="Slide One">
+                </figure><!-- img 1 -->
                 <figure>
-                    <a href="#"><img src="http://theme-fusion.com/avada/wp-content/uploads/2013/01/about_2.jpg" alt="Slide Two"></a>
-                </figure>
+                    <img src="http://theme-fusion.com/avada/wp-content/uploads/2013/01/about_2.jpg" alt="Slide Two">
+                </figure><!-- img 3 -->
                 <figure>
-                <a href="#"><img src="http://theme-fusion.com/avada/wp-content/uploads/2013/01/about_3.jpg" alt="Slide Three"></a>
-              </figure>
-            </div>
+                    <img src="http://theme-fusion.com/avada/wp-content/uploads/2013/01/about_3.jpg" alt="Slide Three">
+                </figure><!-- img 3 -->
+            </nav><!--slider -->
         </section>
        <!--welcome article-->
-         <article>
+         <article role="main">
                 <h1>Welcome To Avada</h1>
                 <p>Lid est laborum dolo rumes fugats untras. Etharums ser quidem rerum facilis dolores nemis omnis fugats vitaes nemo minima rerums unsers sadips amets.. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt.. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore dolore magnm aliquam quaerat voluptatem.</p>
             </article>
         <!-- who is avada accordion section -->
-        <section role="accordion">
+        <section role="main">
             <h1>Who is Avada</h1>
                 <button class="accordion"></button>
                     <a href="#">Our Company Mission</a>
@@ -87,135 +75,134 @@
                     <p>Fugiat dapibus, tellus ac cursus commodo, mauris sit condim eser ntumsi nibh, uum a justo vitaes amet risus amets un. Posi sectetut amet fermntum orem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia nons.</p>
         </section>
          <!-- skill progress tag section -->
-         <section>
+         <section role="main">
             <h1>Our Crazy Skills</h1>
-                <li role="skills"><progress label="Web Design 90" max='100' value='90'></progress></li>
-                <li role="skills"> <progress label="HTML/CSS 95" max='100' value='95'>HTML/CSS 95</progress></li>
-                <li role="skills"> <progress label="Graphic Design 85" max='100' value='85'>Graphic Design 85</progress></li>
-                <li role="skills"> <progress label="WordPress 75" max='100' value='75'>WordPress 75</progress></li>
+                <progress max='100' value='90'></progress>
+                <progress max='100' value='95'>HTML/CSS 95</progress>
+                <progress max='100' value='85'>Graphic Design 85</progress>
+                <progress max='100' value='75'>WordPress 75</progress>
         </section>
          <!-- employee profile section -->
-        <section role="my-peoples">
+        <section role="main">
             <h1>Meet Our Team</h1>
-                <div role="team-member" >
-                    <figure>
-                        <img src="http://theme-fusion.com/avada/wp-content/uploads/2012/08/team1.jpg" alt="dude_uno">
-                     <figcaption>John Doe Developer</figcaption></figure>
-                     <ul role="get-social">
-                         <li><a href="#"><img src="dribble-icon.jpg" alt="dribble"></a></li>
-                         <li><a href="#"><img src="linkedin-icon.jpg" alt="linkedin"></a></li>
-                         <li><a href="#"><img src="twitter-icon.jpg" alt="twitter"></a></li>
-                         <li><a href="#"><img src="facebook-icon.jpg" alt="facebook"></a></li>
-                    </ul>
-                      <p>Redantium, totam rem aperiam, eaque ipsa qu ab illo inventore veritatis et quasi architectos beatae vitae dicta sunt explicabo. Nemo enims sadips ipsums un.</p>
-                </div>
-                <div role="team-member">
-                    <figure role="team-member">
-                        <img src="http://theme-fusion.com/avada/wp-content/uploads/2012/08/team2.jpg" alt="lady_uno">
-                    <figcaption>John Doe Developer</figcaption></figure>
-                    <ul role="get-social">
-                         <li><a href="#"><img src="dribble-icon.jpg" alt="dribble"></a></li>
-                         <li><a href="#"><img src="linkedin-icon.jpg" alt="linkedin"></a></li>
-                         <li><a href="#"><img src="twitter-icon.jpg" alt="twitter"></a></li>
-                         <li><a href="#"><img src="facebook-icon.jpg" alt="facebook"></a></li>
-                    </ul>
+                 <figure>
+                    <img src="http://theme-fusion.com/avada/wp-content/uploads/2012/08/team1.jpg" alt="dude_uno">
+                    <figcaption>
+                        <p>John Doe</p>
+                        <p>Developer</p>
+                     <nav role="navigation">
+                         <a href="#"><img src="dribble-icon.jpg" alt="dribble"></a>
+                         <a href="#"><img src="linkedin-icon.jpg" alt="linkedin"></a>
+                         <a href="#"><img src="twitter-icon.jpg" alt="twitter"></a>
+                         <a href="#"><img src="facebook-icon.jpg" alt="facebook"></a>
+                    </nav>
+                      <p>Redantium, totam rem aperiam, eaque ipsa qu ab illo inventore veritatis et quasi architectos  beatae vitae dicta sunt explicabo. Nemo enims sadips ipsums un.</p>
+                     </figcaption>
+                 </figure><!-- John Doe -->
+                <figure>
+                    <img src="http://theme-fusion.com/avada/wp-content/uploads/2012/08/team2.jpg" alt="lady_uno">
+                    <figcaption>
+                        <p>John Doe</p> 
+                        <p>Developer</p>
+                    <nav role="navigation">
+                         <a href="#"><img src="dribble-icon.jpg" alt="dribble"></a>
+                         <a href="#"><img src="linkedin-icon.jpg" alt="linkedin"></a>
+                         <a href="#"><img src="twitter-icon.jpg" alt="twitter"></a>
+                         <a href="#"><img src="facebook-icon.jpg" alt="facebook"></a>
+                    </nav>
                      <p>Redantium, totam rem aperiam, eaque ipsa qu ab illo inventore veritatis et quasi architectos beatae vitae dicta sunt explicabo. Nemo enims sadips ipsums un.</p>
-                </div>
-                <div role="team-member">
-                    <figure><img src="http://theme-fusion.com/avada/wp-content/uploads/2012/08/team3.jpg" alt="dude_dos">
-                    <figcaption>John Doe Developer</figcaption></figure>
-                    <ul role="get-social">
-                        <li><a href="#"><img src="dribble-icon.jpg" alt="dribble"></a></li>
-                        <li><a href="#"><img src="linkedin-icon.jpg" alt="linkedin"></a></li>
-                        <li><a href="#"><img src="twitter-icon.jpg" alt="twitter"></a></li>
-                        <li><a href="#"><img src="facebook-icon.jpg" alt="facebook"></a></li>
-                    </ul role="get-social">
+                    </figcaption>
+                </figure><!-- John Doe -->
+                <figure>
+                    <img src="http://theme-fusion.com/avada/wp-content/uploads/2012/08/team3.jpg" alt="dude_dos">
+                    <figcaption>
+                        <p>John Doe<p> 
+                        <p>Developer</p>
+                    <nav role="navigation">
+                         <a href="#"><img src="dribble-icon.jpg" alt="dribble"></a>
+                         <a href="#"><img src="linkedin-icon.jpg" alt="linkedin"></a>
+                         <a href="#"><img src="twitter-icon.jpg" alt="twitter"></a>
+                         <a href="#"><img src="facebook-icon.jpg" alt="facebook"></a>
+                    </nav>
                     <p>Redantium, totam rem aperiam, eaque ipsa qu ab illo inventore veritatis et quasi architectos beatae vitae dicta sunt explicabo. Nemo enims sadips ipsums un.</p>
-                </div>
+                     </figcaption>
+                 </figure><!-- John Doe -->
         </section>
          <!-- our clients section :) -->
-         <section role="client">
+         <section role="main">
             <h1>Our Happy Clients</h1>
-                <div role="client-logo">
-                    <ul>
-                         <li><img src="http://theme-fusion.com/avada/wp-content/uploads/2013/08/client_1.png" alt=""></li>
-                         <li><img src="http://theme-fusion.com/avada/wp-content/uploads/2013/08/client_2.png" alt=""></li>
-                         <li><img src="http://theme-fusion.com/avada/wp-content/uploads/2013/08/client_3.png" alt=""></li>
-                         <li><img src="http://theme-fusion.com/avada/wp-content/uploads/2013/08/client_4.png" alt=""></li>
-                         <li><img src="http://theme-fusion.com/avada/wp-content/uploads/2013/08/client_5.png" alt=""></li>
-                         <li><img src="http://theme-fusion.com/avada/wp-content/uploads/2013/08/client_6.png" alt=""></li>
-                    </ul>
-                </div>
+            <nav>
+                <figure>
+                   <a href="#"><img src="http://theme-fusion.com/avada/wp-content/uploads/2013/08/client_1.png" alt=""></a>
+                </figure><!-- logo 1 -->
+                  <figure>
+                   <a href="#"><img src="http://theme-fusion.com/avada/wp-content/uploads/2013/08/client_2.png" alt=""></a>
+                </figure><!-- logo 2 -->
+                  <figure>
+                   <a href="#"><img src="http://theme-fusion.com/avada/wp-content/uploads/2013/08/client_3.png" alt=""></a>
+                </figure><!-- logo 3 -->
+                  <figure>
+                   <a href="#"><img src="http://theme-fusion.com/avada/wp-content/uploads/2013/08/client_4.png" alt=""></a>
+                </figure><!-- logo 4 -->
+                  <figure>
+                   <a href="#"><img src="http://theme-fusion.com/avada/wp-content/uploads/2013/08/client_5.png" alt=""></a>
+                </figure><!-- logo 5 -->
+                  <figure>
+                   <a href="#"><img src="http://theme-fusion.com/avada/wp-content/uploads/2013/08/client_6.png" alt=""></a>
+                </figure><!-- logo 6 -->    
+            </nav><!-- :) clients -->
          </section>
          <!-- form // commit #2 -->
-         <section role="contact">
-         <form id="contact">
-            <h1>Contact</h1>
+         <section >
+            <form role="form" id="contact">
                 <fieldset>
-                      <div> 
-                            <label>Name
-                            <input id="yourName" name="yourNAme" type="text" placeholder="Johnny Carson" required autofocus> 
-                            </label>
-                       </div>
-                        <div> 
-                            <label>Email 
-                            <input id="email" name="email" type="email" placeholder="yourEmail@website.com" required>
-                            </label> 
-                      </div>
-                      <div> 
-                           <button type=submit>Hit Us Up!</button> 
-                     </div> 
-                 </fieldset> 
-        </section>
-         <!-- javascript for days section -->
-
-        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script><!-- better to get apis / cdn via google b/c it caches & makes the internet faster if people all retrieve from same source -->
-        <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.10.2.min.js"><\/script>')</script>
-        <script src="js/plugins.js"></script>
-        <script src="js/main.js"></script>
-
-        <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
-        <script>
-            (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
-            function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;
-            e=o.createElement(i);r=o.getElementsByTagName(i)[0];
-            e.src='//www.google-analytics.com/analytics.js';
-            r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
-            ga('create','UA-XXXXX-X');ga('send','pageview');
-        </script>
-    </body>
+                    <legend>Talk to actual people!</legend>
+                    <label>Name</label>
+                        <input type="text" placeholder="Johnny Carson" required autofocus> 
+                    <label>Email</label> 
+                        <input type="email" placeholder="yourEmail@website.com" required>
+                    <button type="submit">Hit Us Up!</button> 
+                 </fieldset>
+            </form>
+        </section><!-- contact form -->
     <!--footer-->
-    <footer>
-        <div role="aside???">
-            <h1><a href="#"><img src="http://theme-fusion.com/avada/wp-content/uploads/2013/02/logo2x.png" alt="Avada-logo"></a></h1>
-            <p>Lorem ipsum ex vix illud nonummy, novum tation et his. At vix scriptaset patrioque scribentur, at pro fugit erts verterem molestiae, sed et vivendo ali Lorem ipsum ex vix illud nonummy, novum tation et his. At vix scripta patrioque scribentur...</p>
-        </div>
-        <div role="blog">
-            <h2>RECENT POSTS</h2>
-                <li><a href="#">Blog Slideshow Post</a></li>
-                    <hr />
-                <li><a href="#">Aenean Odio Mauris</a></li>
-                    <hr />
-                <li><a href="#">Blog Image Post</a></li>
-                    <hr />
-                <li><a href="#">Blog Video Post</a></li>
-                    <hr />
-                <li><a href="#">Donec Suscipit Dim Euismods</a></li>
-                    <hr />
-        </div>
-        <div role="twaats">
-            <h2>RECENT TWEETS</h2>
-                <li><img src="twitter-big.jpg" alt="twitter-big"> <a href="http://twitter.com/tringwebdesign">@tringwebdesign</a> very nice, fantastic job! <time datetime="2014-3-11" pubdate>22 hours ago</time></li>
-                <li><img src="twitter-big.jpg" alt="twitter-big"><a href="http://twitter.com/hanofthehouse">@hanofthehouse </a> hey! It should work now, there were issues with the envato API.<time datetime="2014-3-07" pubdate>5 days ago</time></li>
-        </div>
-        <div role"werk">
-            <h2>RECENT WORKS</h2>
-                <li><a href="#"><img src="http://theme-fusion.com/avada/portfolio-items/mauris-ultricies-ipsums/" alt="img_1"> </a></li>
-                <li><a href="#"><img src="http://theme-fusion.com/avada/portfolio-items/mauris-ultricies-ipsums/" alt="img_2"> </a></li>
-                <li><a href="#"><img src="http://theme-fusion.com/avada/portfolio-items/mauris-ultricies-ipsums/" alt="img_3"> </a></li>
-                <li><a href="#"><img src="http://theme-fusion.com/avada/portfolio-items/mauris-ultricies-ipsums/" alt="img_4"> </a></li>
-                <li><a href="#"><img src="http://theme-fusion.com/avada/portfolio-items/mauris-ultricies-ipsums/" alt="img_5"> </a></li>
-                <li><a href="#"><img src="http://theme-fusion.com/avada/portfolio-items/mauris-ultricies-ipsums/" alt="img_6"> </a></li>
-        </div>
-    </footer>
+        <footer role="contentinfo">
+            <aside>
+                <a href="#"><img src="http://theme-fusion.com/avada/wp-content/uploads/2013/02/logo2x.png" alt="Avada-logo"></a>
+                <p>Lorem ipsum ex vix illud nonummy, novum tation et his. At vix scriptaset patrioque scribentur, at pro fugit erts verterem molestiae, sed et vivendo ali Lorem ipsum ex vix illud nonummy, novum tation et his. At vix scripta patrioque scribentur...</p>
+            </aside>
+            <section>
+                <h2>Recent Posts</h2>
+                  <nav>
+                    <a href="#">Blog Slideshow Post</a>
+                    <a href="#">Aenean Odio Mauris</a>
+                    <a href="#">Blog Image Post</a>
+                    <a href="#">Blog Video Post</a>
+                    <a href="#">Donec Suscipit Dim Euismods</a>
+                  </nav>
+            </section><!-- recent posts -->
+            <section>
+                <h2>Recent Tweets</h2>
+                    <figure> <img src="twitter-big.jpg" alt="twitter-big"></figure>
+                    <a href="http://twitter.com/tringwebdesign">@tringwebdesign</a>
+                    <p> very nice, fantastic job!</p>
+                    <a href="#">22 hours ago</a>
+                    <figure><img src="twitter-big.jpg" alt="twitter-big"></figure>
+                    <a href="http://twitter.com/hanofthehouse">@hanofthehouse </a>
+                    <p>hey! It should work now, there were issues with the envato API.</p>
+                    <a href="#">5 days ago</a>      
+            </section><!-- twitter widget -->
+            <section >
+                <h2>Recent Werks</h2>
+                <nav role="navigation">
+                   <a href="#"><figure><img src="http://theme-fusion.com/avada/portfolio-items/mauris-ultricies-ipsums/" alt="img_1"></figure> </a>
+                    <a href="#"><figure><img src="http://theme-fusion.com/avada/portfolio-items/mauris-ultricies-ipsums/" alt="img_2"></figure> </a>
+                    <a href="#"><figure><img src="http://theme-fusion.com/avada/portfolio-items/mauris-ultricies-ipsums/" alt="img_3"></figure> </a>
+                    <a href="#"><figure><img src="http://theme-fusion.com/avada/portfolio-items/mauris-ultricies-ipsums/" alt="img_4"></figure> </a>
+                    <a href="#"><figure><img src="http://theme-fusion.com/avada/portfolio-items/mauris-ultricies-ipsums/" alt="img_5"></figure> </a>
+                    <a href="#"><figure><img src="http://theme-fusion.com/avada/portfolio-items/mauris-ultricies-ipsums/" alt="img_6"></figure> </a>
+                </nav>
+            </section><!-- recent works -->
+        </footer>
+    </body>
 </html>
