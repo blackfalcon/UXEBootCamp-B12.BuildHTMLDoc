@@ -12,7 +12,7 @@
   <body>
 
     <header>
-      <nav>
+      <nav role = "navigation">
         <a href="index.html"><img src="/logo.png" alt="Avada logo" class="logo"></a>
         <a href="#{}">Home</a>
         <a href="#{}">Sliders</a>
@@ -28,42 +28,42 @@
       </nav>
     </header>
 
-    <section role="page title">
+    <section class="page-head">
       <h1>About Us Page 1</h1>
-      <nav role = "breadcrumb">
+      <nav role = "navigation" id="breadcrumb" aria-labelledby="breadcrumb">
         <a href="#{}">Home</a>
         <a href="#{}">About Us Page 1</a>
       </nav>
     </section>
 
-    <section role="Company Image Slideshow">
+    <section role="marquee">
       <nav class="slide-nav">
         <figure>
           <video src="/video.mp4"></video>
-          <figurecap>Video introduction to our company</figurecap>
+          <figcaption>Video introduction to our company</figcaption>
         </figure>
         <figure>
           <img src="/slider1.png" alt="Slide Two">
-          <figurecap>Content about the second slide!</figurecap>
+          <figcaption>Content about the second slide!</figcaption>
         </figure>
         <figure>
           <img src="/slider2.png" alt="Slide Three">
-          <figurecap>More content! About the third slide!</figurecap>
+          <figcaption>More content! About the third slide!</figcaption>
         </figure>
         <figure>
           <img src="/slider3.png" alt="Slide Four">
-          <figurecap>More content again! Fourth slide shit!</figurecap>
+          <figcaption>More content again! Fourth slide shit!</figcaption>
         </figure>
       </nav>
     </section>
 
-    <article role ="welcome">
-      <h2>Welcome To Avada</h2>
+    <article role ="main">
+      <h1>Welcome To Avada</h1>
       <p>Lid est laborum dolo rumes fugats untras. Etharums ser quidem rerum facilis dolores nemis omnis fugats vitaes nemo minima rerums unsers sadips amets.. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt.. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore dolore magnm aliquam quaerat voluptatem.</p>
     </article>
 
-    <section role = "introduction">
-      <h2>Who Is Avada</h2>
+    <section role = "main">
+      <h1>Who Is Avada</h1>
       <button class="accordian">expand arrow</button>
       <h3>Our Company Mission</h3>
       <p>Fugiat dapibus, tellus ac cursus commodo, mauris sit condim eser ntumsi nibh, uum a justo vitaes amet risus amets un. Posi sectetut amet fermntum orem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia nons.</p>
@@ -78,22 +78,22 @@
       <p>Fugiat dapibus, tellus ac cursus commodo, mauris sit condim eser ntumsi nibh, uum a justo vitaes amet risus amets un. Posi sectetut amet fermntum orem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia nons.</p>
     </section>
 
-    <section role="skills">
-      <h2>Our Crazy Skills</h2>
-      <progress max="100" value="90">Web Design</progress>
-      <progress max="100" value="95">HTML/CSS</progress>
-      <progress max="100" value="85">Graphic Design</progress>
-      <progress max="100" value="75">Word Press</progress>
+    <section role="main">
+      <h1>Our Crazy Skills</h1>
+      <progress aria-valuenow="90" aria-valuemin="0" aria-valuemax="100">Web Design</progress>
+      <progress aria-valuenow="95" aria-valuemin="0" aria-valuemax="100">HTML/CSS</progress>
+      <progress aria-valuenow="85" aria-valuemin="0" aria-valuemax="100">Graphic Design</progress>
+      <progress aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">Word Press</progress>
     </section>
 
-    <section role="team">
-      <h2>Meet Our Team</h2>
-      <section role="team-member-1">
+    <section role="main">
+      <h1>Meet Our Team</h1>
+      <section>
         <figure>
           <img src="/john1.jpg" alt="John Doe's picture">
-          <figurecap>
-        <h3>John Doe</h3>
-        <p role = "title">Developer</p>
+          <figcaption>
+        <h1>John Doe</h1>
+        <h2>Developer</h2>
         <nav>
           <a href="#{}" class="icon">Dribbble</a>
           <a href="#{}" class="icon">Facebook</a>
@@ -101,15 +101,15 @@
           <a href="#{}" class="icon">LinkedIn</a>
         </nav>
         <p>Redantium, totam rem aperiam, eaque ipsa qu ab illo inventore veritatis et quasi architectos beatae vitae dicta sunt explicabo. Nemo enims sadips ipsums un.</p>
-      </figurecap>
+      </figcaption>
       </figure>
       </section>
-      <section role="team-member-2">
+      <section>
         <figure>
           <img src="/john1.jpg" alt="John Doe's picture">
-          <figurecap>
-        <h3>John Doe</h3>
-        <p role = "title">Developer</p>
+          <figcaption>
+        <h1>John Doe</h1>
+        <h2>Developer</h2>
         <nav>
           <a href="#{}" class="icon">Dribbble</a>
           <a href="#{}" class="icon">Facebook</a>
@@ -117,15 +117,15 @@
           <a href="#{}" class="icon">LinkedIn</a>
         </nav>
         <p>Redantium, totam rem aperiam, eaque ipsa qu ab illo inventore veritatis et quasi architectos beatae vitae dicta sunt explicabo. Nemo enims sadips ipsums un.</p>
-      </figurecap>
+      </figcaption>
       </figure>
       </section>
-      <section role="team-member-3">
+      <section>
         <figure>
           <img src="/john1.jpg" alt="John Doe's picture">
-          <figurecap>
-        <h3>John Doe</h3>
-        <p role = "title">Developer</p>
+          <figcaption>
+        <h1>John Doe</h1>
+        <h2>Developer</h2>
         <nav>
           <a href="#{}" class="icon">Dribbble</a>
           <a href="#{}" class="icon">Facebook</a>
@@ -133,49 +133,43 @@
           <a href="#{}" class="icon">LinkedIn</a>
         </nav>
         <p>Redantium, totam rem aperiam, eaque ipsa qu ab illo inventore veritatis et quasi architectos beatae vitae dicta sunt explicabo. Nemo enims sadips ipsums un.</p>
-      </figurecap>
+      </figcaption>
       </figure>
       </section>
     </section>
 
-    <section role = "client-list">
-      <h2>Our Happy Clients</h2>
-      <nav>
+    <section>
+      <h1>Our Happy Clients</h1>
+      <nav role="navigation">
         <figure><a href="#{}"><img src="shift.png" alt="Shift"></a></figure>
         <figure><a href="#{}"><img src="envato.png" alt="Envato"></a></figure>
         <figure><a href="#{}"><img src="threeleaves.png" alt="Three Leaves"></a></figure>
         <figure><a href="#{}"><img src="sparrow.png" alt="Sparrow"></a></figure>
         <figure><a href="#{}"><img src="ac.png" alt="A.C."></a></figure>
-      <nav>
+      </nav>
     </section>
 
-    <section role="client-form">
-      <form class="contact_form" action="" method="post" name="contact_form">
+    <section>
+      <form class="contact_form" method="post" name="contact_form" role="form">
         <fieldset>
-          <h2>Want To Be A Client?</h2>
-          <li>
-            <label for="name">Name:</label>
-            <input type="text" required id="name" placeholder="Antonio Tony">
-          </li>
-          <li>
-            <label for="email">Email:</label>
-            <input type="email" required id="email" placeholder="name@example.com">
-          </li>
-          <li>
-            <button class="submit" type="submit">Submit!</button>
-          </li>
+          <h1>Want To Be A Client?</h1>
+          <label for="name">Name:</label>
+          <input type="text" required id="name" placeholder="Antonio Tony">
+          <label for="email">Email:</label>
+          <input type="email" required id="email" placeholder="name@example.com">
+          <button class="submit" type="submit">Submit!</button>
         </fieldset>
       </form>
     </section>
 
     <footer>
-      <aside role = "mission-statement">
+      <aside role = "complementary">
       <img src="avada-logo.png" alt="Avada logo">
       <p>Lorem ipsum ex vix illud nonummy, novum tation et his. At vix scriptaset patrioque scribentur, at pro fugit erts verterem molestiae, sed et vivendo ali Lorem ipsum ex vix illud nonummy, novum tation et his. At vix scripta patrioque scribentur...</p>
       </aside>
 
-      <section role = "recent-blog-posts">
-        <h4>Recent Posts</h4>
+      <aside role = "complementary">
+        <h1>Recent Posts</h1>
         <ul>
           <li><a href="#{}">Blog Slideshow Post</a></li>
           <li><a href="#{}">Aenean Odio Mauris</a></li>
@@ -183,10 +177,10 @@
           <li><a href="#{}">Blog Video Post</a></li>
           <li><a href="#{}">Donec Suscipit Dim Euismods</a></li>
         </ul>
-      </section>
+      </aside>
 
       <section>
-        <h4>Recent Tweets</h4>
+        <h1>Recent Tweets</h1>
         <ul class="twitter">
           <li><a href="#{}" class="twitter_user">@tringwebdesign</a>  very nice, fantastic job! <a href="#{}" class = "twitter_timestamp">22 hours ago</a></li>
           <li><a href="#{}" class="twitter_user">@hanofthehouse</a>  hey! It should work now, there were issues with the envato API. <a href="#{}" class = "twitter_timestamp">5 days ago</a></li>
@@ -194,7 +188,7 @@
       </section>
 
       <section>
-        <h4>Recent Works</h4>
+        <h1>Recent Works</h1>
         <ul class="work-grid">
           <li><a href="#{}"><img src="work1.png" alt="Work Example 1"></a></li>
           <li><a href="#{}"><img src="work2.png" alt="Work Example 2"></a></li>
