@@ -6,20 +6,11 @@
         <title>Avada - About Us Page 1</title>
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-
-        <!-- Place favicon.ico and apple-touch-icon(s) in the root directory -->
-
         <link rel="stylesheet" href="css/normalize.css">
         <link rel="stylesheet" href="css/main.css">
         <script src="js/vendor/modernizr-2.7.1.min.js"></script>
     </head>
     <body>
-        <!--[if lt IE 8]>
-            <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
-        <![endif]-->
-
-        <!-- Add your site or application content here -->
-
         <nav>
           <h1><a href="#"><img src="avada-logo.png" alt="Avada"></a></h1>
           <a href="#">Home</a>
@@ -37,7 +28,7 @@
 
         <section>
           <h1>About Us Page 1</h1>
-          <ul class="breadcrumbs">
+          <ul>
             <li><a href="#">Home</a></li>
             <li>/</li>
             <li>About Us Page 1</li>
@@ -91,12 +82,10 @@
 
         <section>
           <h2>Our Crazy Skills</h2>
-            <ul>
-              <li><progress value="90" max="100">Web Design</progress></li>
-              <li><progress value="95" max="100">HTML/CSS</progress></li>
-              <li><progress value="85" max="100">Graphic Design</progress></li>
-              <li><progress value="75" max="100">WordPress</progress></li>
-            </ul>
+          <progress value="90" max="100">Web Design</progress>
+          <progress value="95" max="100">HTML/CSS</progress>
+          <progress value="85" max="100">Graphic Design</progress>
+          <progress value="75" max="100">WordPress</progress>
         </section>
 
         <section>
@@ -105,65 +94,57 @@
             <img src="blackguy.jpg" alt="Black Guy">
             <h2>John Doe</h2>
             <h3>Developer</h3>
-            <ul>
-              <li><a href="#"></a></li>
-              <li><a href="#"></a></li>
-              <li><a href="#">/a></li>
-              <li><a href="#"></a></li>
-            </ul>
+            <a href="dribbble.com"></a>
+            <a href="linkedin.com"></a>
+            <a href="twitter.com">/a>
+            <a href="facebook.com"></a>
             <p>Redantium, totam rem aperiam, eaque ipsa qu ab illo inventore veritatis et quasi architectos beatae vitae dicta sunt explicabo. Nemo enims sadips ipsums un.</p>
           </section>
           <section>
             <img src="blackgirl.jpg" alt="Black Girl">
             <h2>John Doe</h2>
             <h3>Developer</h3>
-            <ul>
-              <li><a href="#"></a></li>
-              <li><a href="#"></a></li>
-              <li><a href="#">/a></li>
-              <li><a href="#"></a></li>
-            </ul>
+            <a href="dribbble.com"></a>
+            <a href="linkedin.com"></a>
+            <a href="twitter.com">/a>
+            <a href="facebook.com"></a>
             <p>Redantium, totam rem aperiam, eaque ipsa qu ab illo inventore veritatis et quasi architectos beatae vitae dicta sunt explicabo. Nemo enims sadips ipsums un.</p>
           </section>
           <section>
             <img src="whiteguy.jpg" alt="White Guy">
             <h2>John Doe</h2>
             <h3>Developer</h3>
-            <ul>
-              <li><a href="#"></a></li>
-              <li><a href="#"></a></li>
-              <li><a href="#">/a></li>
-              <li><a href="#"></a></li>
-            </ul>
+            <a href="dribbble.com"></a>
+            <a href="linkedin.com"></a>
+            <a href="twitter.com">/a>
+            <a href="facebook.com"></a>
             <p>Redantium, totam rem aperiam, eaque ipsa qu ab illo inventore veritatis et quasi architectos beatae vitae dicta sunt explicabo. Nemo enims sadips ipsums un.</p>
           </section>
         </section>
 
         <section>
           <h2>Our Happy Clients</h2>
-          <ul>
-              <li><img src="shift.jpg" alt="Shift logo"></li>
-              <li><img src="envato.jpg" alt="Envato logo"></li>
-              <li><img src="threeleaves.jpg" alt="Three Leaves logo"></li>
-              <li><img src="sparrow.jpg" alt="Sparrow logo"></li>
-              <li><img src="ac.jpg" alt="AC logo"></li>
-          </ul>
+            <img src="shift.jpg" alt="Shift logo">
+            <img src="envato.jpg" alt="Envato logo">
+            <img src="threeleaves.jpg" alt="Three Leaves logo">
+            <img src="sparrow.jpg" alt="Sparrow logo">
+            <img src="ac.jpg" alt="AC logo">
         </section>
 
           <form>
             <fieldset>
               <legend>Contact Us</legend>
 
-                <label>Full Name</label>
-                <input type="text" placeholder="Darius Bumblesworth" required autofocus>
+                <label for="name">Full Name</label>
+                <input id="name" type="text" placeholder="Darius Bumblesworth" required autofocus>
 
 
-                <label>Email</label>
-                <input type="email" placeholder="darius@bumblesworth.com" required>
+                <label for="email" >Email</label>
+                <input id="email" type="email" placeholder="darius@bumblesworth.com" required>
 
 
-                <label>Message</label>
-                <input type="text" placeholder="Your Message Here" required>
+                <label for="message">Message</label>
+                <input id="message" type="text" placeholder="Your Message Here" required>
 
 
                 <button type="submit">Submit</button>
@@ -172,11 +153,11 @@
           </form>
 
         <footer>
-          <aside>
+          <aside role="contentinfo">
             <img src="avada-logo.png" alt="Avada Logo">
             <p>Lorem ipsum ex vix illud nonummy, novum tation et his. At vix scriptaset patrioque scribentur, at pro fugit erts verterem molestiae, sed et vivendo ali Lorem ipsum ex vix illud nonummy, novum tation et his. At vix scripta patrioque scribentur...</p>
           </aside>
-          <div class="posts">
+          <div role="list">
             <h3>Recent Posts</h3>
             <ul>
               <li><a href="#">Blog Slideshow Post</a></li>
@@ -186,13 +167,13 @@
               <li><a href="#">Donec Suscipit Euismods</a></li>
             </ul>
           </div>
-          <div class="tweets">
+          <div role="complementary">
             <ul>
               <li>@tringwebdesign very nice, fantastic job! <a href="#">22 hours ago</a></li>
               <li>@hanofthehouse hey! It should work now <a href="#">5 days ago</a></li>
             </ul>
           </div>
-          <div class="works">
+          <div role="complementary">
             <img src="work1.jpg" alt="work 1">
             <img src="work2.jpg" alt="work 2">
             <img src="work3.jpg" alt="work 3">
@@ -200,25 +181,10 @@
             <img src="work5.jpg" alt="work 5">
             <img src="work6.jpg" alt="work 6">
           </div>
-          <div class="copyright">
+          <div role="contentinfo">
             <p>Copyright 2012 - 2014 Avada Theme by Theme Fusion | All Rights Reserved | Powered by WordPress</p>
           </div>
 
         </footer>
-
-        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
-        <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.11.0.min.js"><\/script>')</script>
-        <script src="js/plugins.js"></script>
-        <script src="js/main.js"></script>
-
-        <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
-        <script>
-            (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
-            function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;
-            e=o.createElement(i);r=o.getElementsByTagName(i)[0];
-            e.src='//www.google-analytics.com/analytics.js';
-            r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
-            ga('create','UA-XXXXX-X');ga('send','pageview');
-        </script>
     </body>
 </html>
